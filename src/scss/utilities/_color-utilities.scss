@@ -1,0 +1,15 @@
+@use '../abstracts/colors' as *;
+@use "../abstracts/type-scale" as *;
+@use "../abstracts/mixins" as *;
+
+// Generates utility classes for BG and text colors
+@each $color, $shades in $colors {
+  @each $shade, $value in $shades {
+    .text-#{$color}-#{"" + $shade} {
+      color: $value;
+    }
+    .bg-#{$color}-#{"" + $shade} {
+      background-color: $value;
+    }
+  }
+}
