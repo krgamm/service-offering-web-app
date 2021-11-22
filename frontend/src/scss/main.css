@@ -1,0 +1,321 @@
+@font-face {
+  font-family: Ideal Sans;
+  src: url("/fonts/IdealSansSSm-Semibold_1.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: F37 Ginger;
+  src: url("/fonts/IdealSansSSm-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: F37 Ginger;
+  src: url("/fonts/IdealSansSSm-Book.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: Race Brannt;
+  src: url("/fonts/Quarto-Semibold_1.woff") format("truetype");
+}
+body {
+  font-family: Ideal Sans, sans-serif;
+  font-weight: 400;
+  color: var(--clr-neutral-600);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: var(--fs-500);
+}
+
+h2 {
+  font-weight: 400;
+  font-size: var(--fs-400);
+}
+
+h3 {
+  font-weight: 400;
+  font-size: var(--fs-300);
+  line-height: auto;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+
+.text-neutral-100 {
+  color: white;
+}
+
+.bg-neutral-100 {
+  background-color: white;
+}
+
+.text-neutral-200 {
+  color: #f7f7f7;
+}
+
+.bg-neutral-200 {
+  background-color: #f7f7f7;
+}
+
+.text-neutral-600 {
+  color: #363636;
+}
+
+.bg-neutral-600 {
+  background-color: #363636;
+}
+
+.text-neutral-700 {
+  color: #242424;
+}
+
+.bg-neutral-700 {
+  background-color: #242424;
+}
+
+.text-accent-orange {
+  color: #e06238;
+}
+
+.bg-accent-orange {
+  background-color: #e06238;
+}
+
+.container {
+  padding: 0 1.5rem;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.flex-row-centered-middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+.service-card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.service-card-wrapper .service-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.5em 0;
+  padding: 0.25em 0.5em;
+  border: 3px black solid;
+  border-radius: 8px;
+}
+.service-card-wrapper .service-card .service-title {
+  word-wrap: none;
+}
+@media (min-width: 768px) {
+  .service-card-wrapper .service-card {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    margin: 0.25em;
+    padding: 0.5em;
+    max-width: 33%;
+  }
+}
+.service-card-wrapper .service-card .info-icon {
+  min-width: 1.5em;
+  max-width: 1.5em;
+  margin-left: 1em;
+}
+@media (min-width: 768px) {
+  .service-card-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+#plan-sidebar {
+  background-color: black;
+  width: 25%;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 0;
+  margin-top: auto;
+}
+footer span {
+  margin: 1em;
+}
+
+:root {
+  --clr-neutral-100: white;
+  --clr-neutral-200: #f7f7f7;
+  --clr-neutral-600: #363636;
+  --clr-neutral-700: #242424;
+  --clr-accent-orange: #e06238;
+  --fs-200: 0.6rem;
+  --fs-300: 0.75rem;
+  --fs-400: 1rem;
+  --fs-500: 1.333rem;
+  --fs-600: 1.777rem;
+  --fs-700: 2.369rem;
+  --fs-800: 3.157rem;
+  --fs-900: 4.209rem;
+}
+@media (min-width: 768px) {
+  :root {
+    --fs-300: 1rem;
+    --fs-400: 1.425rem;
+    --fs-500: 2rem;
+    --fs-600: 2.827rem;
+    --fs-700: 4rem;
+    --fs-800: 5.653rem;
+    --fs-900: 11rem;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  body .content {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,7 +1,0 @@
-@use '../abstracts/font-face' as *;
-
-body {
-  font-family: $ff-ss;
-  font-weight: $fw-n;
-  color: var(--clr-neutral-600);
-}

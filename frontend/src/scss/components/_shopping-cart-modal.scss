@@ -1,0 +1,10 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/type-scale" as *;
+
+#shopping-cart-modal {
+  @include mq(medium) {
+    background-color: black;
+    width: 50%;
+    max-width: 500px;
+  }
+}

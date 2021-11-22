@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_global_buckets",
+  "info": {
+    "name": "service category",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Product",
+        "Experience"
+      ]
+    },
+    "process": {
+      "type": "enumeration",
+      "enum": [
+        "Discover",
+        "Define",
+        "Design",
+        "Deliver",
+        "Debrief"
+      ]
+    }
+  }
+}

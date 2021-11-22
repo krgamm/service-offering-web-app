@@ -1,0 +1,49 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/type-scale" as *;
+@use "../abstracts/font-face" as *;
+
+.service-library-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  .service-library-card {
+    padding: 1em;
+    border: 2px black solid;
+    border-radius: 8px;
+    margin: 1.5% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h2 {
+      margin-bottom: 0.5em;
+      font-size: var(--fs-300);
+      font-weight: $fw-b;
+    }
+    .tag-wrapper {
+      margin-top: 1em;
+      background-color: var(--clr-neutral-100);
+      border: 1px black solid;
+      border-radius: 4px;
+      padding: 0.5em;
+      width: min-content;
+      //   display: flex;
+      //   flex-direction: row;
+      li {
+        margin: auto;
+        display: flex;
+        justify-items: center;
+        p:first-of-type {
+          margin-right: 0.5em;
+        }
+        p:last-of-type {
+          font-weight: $fw-b;
+        }
+      }
+    }
+    @include mq(medium) {
+      flex-basis: 0 1 auto;
+      width: 30%;
+      margin: 1.5%;
+      height: auto;
+    }
+  }
+}

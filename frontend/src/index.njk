@@ -1,0 +1,66 @@
+---
+name: Home
+layout: base.njk
+---
+{# {%- for service in services -%}
+    {%- if service.category.process === "Discover"-%}
+        <h1>{{service.category.process}}</h1>
+        <p>{{service.title}}</p>
+    {%- endif -%}
+{%- endfor -%} #}
+<div class="container">
+<a href="/services-library/">Services</a>
+
+<div id="process-wrapper">
+    <h1>Discover</h1>
+    <ul class="service-card-wrapper">
+        {%- for service in services -%}
+            {%- if service.category.process === "Discover"-%}
+                {%- include 'service-card.njk'-%}
+            {%- endif -%}
+        {%- endfor -%}
+    </ul>
+    <h1>Define</h1>
+    <ul class="service-card-wrapper">
+        {%- for service in services -%}
+            {%- if service.category.process === "Define"-%}
+                {%- include 'service-card.njk'-%}
+            {%- endif -%}
+        {%- endfor -%}
+    </ul>
+    <h1>Design</h1>
+    <ul class="service-card-wrapper">
+        {%- for service in services -%}
+            {%- if service.category.process === "Design"-%}
+               {%- include 'service-card.njk'-%}
+            {%- endif -%}
+        {%- endfor -%}
+        
+    </ul>
+    <h1>Deliver</h1>
+    <ul class="service-card-wrapper">
+        {%- for service in services -%}
+            {%- if service.category.process === "Deliver"-%}
+                {%- include 'service-card.njk'-%}
+            {%- endif -%}
+        {%- endfor -%}
+    </ul>
+    <h1>Debrief</h1>
+    <ul class="service-card-wrapper">
+        {%- for service in services -%}
+            {%- if service.category.process === "Debrief"-%}
+                {%- include 'service-card.njk'-%}
+            {%- endif -%}
+        {%- endfor -%}
+    </ul>
+</div>
+</div>
+
+{# <h1>Discover</h1>
+<ul>
+    {%- for service in services -%}
+        {%- if service.category.process === "Discover"-%}
+             <li>{{service.title}}</li>
+        {%- endif -%}
+    {%- endfor -%}
+</ul> #}

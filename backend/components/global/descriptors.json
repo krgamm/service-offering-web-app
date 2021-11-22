@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_global_descriptors",
+  "info": {
+    "name": "descriptors",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "categorization": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.bucket"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

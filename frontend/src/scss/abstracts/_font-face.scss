@@ -1,0 +1,36 @@
+@font-face {
+  font-family: Ideal Sans;
+
+  src: url("/fonts/IdealSansSSm-Semibold_1.woff") format("woff");
+
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: Ideal Sans;
+
+  src: url("/fonts/IdealSansSSm-Medium.woff") format("woff");
+
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: Ideal Sans;
+
+  src: url("/fonts/IdealSansSSm-Book.woff") format("woff");
+
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Quarto;
+  src: url("/fonts/Quarto-Semibold_1.woff") format("truetype");
+}
+
+// Define variables
+$ff-ss: Ideal Sans, sans-serif;
+$ff-stylized: Quarto, sans-serif;
+$fw-n: 400;
+$fw-b: 700;
+$fw-m: 500;

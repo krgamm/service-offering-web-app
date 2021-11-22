@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "name": "service",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "templates": {
+      "via": "services",
+      "collection": "template"
+    },
+    "category": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.bucket"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

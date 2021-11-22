@@ -1,0 +1,38 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/type-scale" as *;
+
+.service-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  .service-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em 0;
+    padding: 0.25em 0.5em;
+    border: 3px black solid;
+    border-radius: 8px;
+    .service-title {
+      // margin-right: 1em;
+      word-wrap: none;
+    }
+    @include mq(medium) {
+      flex-grow: 1;
+      flex-shrink: 1;
+      margin: 0.25em;
+      padding: 0.5em;
+      max-width: 366px;
+    }
+    .info-icon {
+      min-width: 1.5em;
+      max-width: 1.5em;
+      margin-left: 1em;
+    }
+  }
+  @include mq(medium) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
