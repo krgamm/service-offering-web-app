@@ -2,9 +2,9 @@
 @use "../abstracts/type-scale" as *;
 
 #shopping-cart-modal {
+  background-color: gray;
   @include mq(medium) {
-    background-color: black;
-    width: 50%;
-    max-width: 500px;
+    width: 500px;
+    height: auto;
   }
 }

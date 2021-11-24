@@ -1,10 +1,10 @@
 @use "../abstracts/mixins" as *;
 @use "../abstracts/type-scale" as *;
 
-.service-card-wrapper {
+.service-item-wrapper {
   display: flex;
   flex-direction: column;
-  .service-card {
+  .service-item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -23,6 +23,10 @@
       margin: 0.25em;
       padding: 0.5em;
       max-width: 366px;
+      &:hover {
+        background-color: var(--clr-accent-orange);
+        cursor: pointer;
+      }
     }
     .info-icon {
       min-width: 1.5em;

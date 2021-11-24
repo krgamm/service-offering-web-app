@@ -1,0 +1,12 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/type-scale" as *;
+
+#template-modal {
+  background-color: red;
+  position: absolute;
+  @include mq(medium) {
+    height: 100%;
+    width: 100%;
+    top: 0;
+  }
+}

@@ -13,47 +13,47 @@ layout: base.njk
 
 <div id="process-wrapper">
     <h1>Discover</h1>
-    <ul class="service-card-wrapper">
-        {%- for service in services -%}
+    <ul class="service-item-wrapper">
+        {%- for service in serviceGraph -%}
             {%- if service.category.process === "Discover"-%}
-                {%- include 'service-card.njk'-%}
+                {%- include 'service-item.njk'-%}
             {%- endif -%}
         {%- endfor -%}
     </ul>
     <h1>Define</h1>
-    <ul class="service-card-wrapper">
-        {%- for service in services -%}
+    <ul class="service-item-wrapper">
+        {%- for service in serviceGraph -%}
             {%- if service.category.process === "Define"-%}
-                {%- include 'service-card.njk'-%}
+                {%- include 'service-item.njk'-%}
             {%- endif -%}
         {%- endfor -%}
     </ul>
     <h1>Design</h1>
-    <ul class="service-card-wrapper">
-        {%- for service in services -%}
+    <ul class="service-item-wrapper">
+        {%- for service in serviceGraph -%}
             {%- if service.category.process === "Design"-%}
-               {%- include 'service-card.njk'-%}
+               {%- include 'service-item.njk'-%}
             {%- endif -%}
         {%- endfor -%}
         
     </ul>
     <h1>Deliver</h1>
-    <ul class="service-card-wrapper">
-        {%- for service in services -%}
+    <ul class="service-item-wrapper">
+        {%- for service in serviceGraph -%}
             {%- if service.category.process === "Deliver"-%}
-                {%- include 'service-card.njk'-%}
+                {%- include 'service-item.njk'-%}
             {%- endif -%}
         {%- endfor -%}
     </ul>
     <h1>Debrief</h1>
-    <ul class="service-card-wrapper">
-        {%- for service in services -%}
+    <ul class="service-item-wrapper">
+        {%- for service in serviceGraph -%}
             {%- if service.category.process === "Debrief"-%}
-                {%- include 'service-card.njk'-%}
+                {%- include 'service-item.njk'-%}
             {%- endif -%}
         {%- endfor -%}
     </ul>
-</div>
+    </div>
 </div>
 
 {# <h1>Discover</h1>

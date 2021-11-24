@@ -4,7 +4,7 @@ layout: base.njk
 ---
 <div class="container">
     <ul class="service-library-wrapper">
-        {%- for service in services-%}
+        {%- for service in serviceGraph-%}
             <li class="service-library-card">
                 <h2>{{service.title}}</h2>
                 <p>{{service.description}} Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati

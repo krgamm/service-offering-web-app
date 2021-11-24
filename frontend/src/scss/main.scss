@@ -33,6 +33,9 @@
 }
 
 body {
+  .content {
+    position: relative;
+  }
   @include mq(medium) {
     display: flex;
     flex-direction: row-reverse;

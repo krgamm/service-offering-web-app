@@ -16,12 +16,10 @@
     </div>
         <div class="content">
             {{ content | safe }}
+            {% include 'template-modal.njk'%}
         </div>
-
         {# {% include 'footer.njk' %} #}
-        
         <script type="module" src="/scripts/index.js" ></script>
-
 
     </body>
 </html>

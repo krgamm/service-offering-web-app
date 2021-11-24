@@ -18,7 +18,6 @@ async function fetchData(apiPath) {
 
 module.exports = async function () {
   // TODO: make a forEach apiPaths
-  const serviceData = await fetchData("/services");
-  console.log(serviceData);
-  return serviceData;
+  const services = await fetchData("/services");
+  return services;
 };
