@@ -11,17 +11,23 @@
         <title>Home</title>
     </head>
     <body class="bg-neutral-200 text-netural-600">
-    
-    <div id="shopping-cart-modal">
+    <div id="shopping-cart-modal" class="hidden">
     <ul id="shopping-list" class="service-item-wrapper">
-
     </ul>
+        <button id="clear-all" class="hidden">Clear All</button>
+
 </div>
     </div>
         <div class="content">
+        <div class="container">
+            <nav>
+<a class = "nav-link" href="/services-library">Service Library</a>
+    <a class = "nav-link" href="/">New Plan</a>
+</nav>
+        </div>
+
             
 <div class="container">
-<a href="/services-library/">Services</a>
 
 <div id="process-wrapper">
     <h1>Discover</h1>
@@ -32,7 +38,12 @@
     </div>
 </li></ul>
     <h1>Define</h1>
-    <ul class="service-item-wrapper"></ul>
+    <ul class="service-item-wrapper"><li class="service-item">
+    <h3 class="service-title">Blah</h3>
+    <div class="info-icon">
+        <img src="./images/information-circle-outline.svg" alt="">
+    </div>
+</li></ul>
     <h1>Design</h1>
     <ul class="service-item-wrapper"><li class="service-item">
     <h3 class="service-title">UI Design</h3>
@@ -66,16 +77,29 @@
     <div class="info-icon">
         <img src="./images/information-circle-outline.svg" alt="">
     </div>
+</li><li class="service-item">
+    <h3 class="service-title">jbjhb</h3>
+    <div class="info-icon">
+        <img src="./images/information-circle-outline.svg" alt="">
+    </div>
 </li></ul>
     <h1>Debrief</h1>
-    <ul class="service-item-wrapper"></ul>
+    <ul class="service-item-wrapper"><li class="service-item">
+    <h3 class="service-title">Template 2</h3>
+    <div class="info-icon">
+        <img src="./images/information-circle-outline.svg" alt="">
     </div>
+</li></ul>
+    </div>
+
+    <button href="/services-library/" id="template-btn">Templates</button>
+
 </div>
 
 
 
             <div id="template-modal" class="hidden">
-<p>beep</p>
+    <button id="template-btn">Close Templates</button>
 </div>
         </div>
         

@@ -1,0 +1,21 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/type-scale" as *;
+
+nav {
+  display: flex;
+}
+.nav-link {
+  padding: 0.25em 0.5em;
+  margin: 1em;
+  cursor: pointer;
+  border-radius: 0.5em;
+  border: none;
+  background-color: transparent;
+  @include mq(medium) {
+    &:hover,
+    .active {
+      background-color: gray;
+      color: var(--clr-neutral-100);
+    }
+  }
+}

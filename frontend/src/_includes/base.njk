@@ -11,10 +11,13 @@
         <title>{{ name }}</title>
     </head>
     <body class="bg-neutral-200 text-netural-600">
-    {# {% include 'nav.njk' %} #}
     {% include 'shopping-cart-modal.njk'%}
     </div>
         <div class="content">
+        <div class="container">
+            {% include 'nav.njk' %}
+        </div>
+
             {{ content | safe }}
             {% include 'template-modal.njk'%}
         </div>

@@ -3,6 +3,13 @@
 
 #shopping-cart-modal {
   background-color: gray;
+  padding: 2em;
+  .service-item-wrapper {
+    flex-direction: column;
+    .service-item {
+      width: 100%;
+    }
+  }
   @include mq(medium) {
     width: 500px;
     height: auto;

@@ -34,6 +34,10 @@
       margin-left: 1em;
     }
   }
+  .active-service-item {
+    background-color: var(--clr-accent-orange);
+    cursor: pointer;
+  }
   @include mq(medium) {
     flex-direction: row;
     flex-wrap: wrap;
