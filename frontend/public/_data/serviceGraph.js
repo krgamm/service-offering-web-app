@@ -71,8 +71,8 @@ async function getAllServices() {
   const allServicesFormatted = allServices.map((item) => {
     return {
       id: item.id,
-      title: item._createdAt,
-      description: item.title,
+      title: item.title,
+      description: item.description,
       category: {
         type: item.category.type,
         process: item.category.process,
@@ -81,8 +81,9 @@ async function getAllServices() {
   });
 
   // return formatted services
+  console.log(allServicesFormatted);
   return allServicesFormatted;
 }
 
 // export for 11ty
-module.exports = getAllServices;
+module.exports = getAllServices();
