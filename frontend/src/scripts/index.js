@@ -61,6 +61,8 @@ let count = 0;
 function addToCheckout(targetObject) {
   // duplicate clicked target
   const clone = targetObject.item;
+  clone.removeChild(clone.childNodes[3]);
+
   shoppingListContainer.appendChild(clone);
   shoppingList = shoppingListContainer.querySelectorAll(
     ".service-item-original"

@@ -43,4 +43,68 @@ body {
       width: 100%;
     }
   }
+  a,
+  a:visited {
+    text-decoration: none;
+  }
+}
+#home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  .heading-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto auto 1em auto;
+  }
+  h1 {
+    font-size: var(--fs-600);
+  }
+  p {
+    font-size: var(--fs-400);
+    color: gray;
+  }
+  #rp-logo {
+    max-width: 150px;
+    margin: 2em auto;
+  }
+  .nav-options-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-top: 1em;
+  }
+  .nav-option-item {
+    height: 200px;
+    width: 200px;
+    background-color: var(--clr-neutral-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px var(--clr-accent-orange) solid;
+    border-radius: 0.5em;
+    a {
+      font-size: var(--fs-400);
+      text-align: center;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1em;
+      &:hover {
+        background-color: var(--clr-accent-orange);
+        color: var(--clr-neutral-100);
+      }
+    }
+  }
+}
+
+#main-content {
+  width: 80%;
+  margin: auto auto;
 }

@@ -2,17 +2,20 @@
 name: Services Library
 layout: base.njk
 ---
+{# {% set newServiceLibraryList = [] %} {% for serviceItem in serviceGraph %} {% set
+newServiceLibraryList = (newServiceLibraryList.push({title: serviceItem.title, description: serviceItem.description, type: serviceItem.category.type, process: serviceItem.category.process}),
+newServiceLibraryList) %} {% endfor %} #}
+
 <div class="container">
     <ul class="service-library-wrapper">
-        {%- for service in serviceGraph-%}
+        {%- for service in serviceGraph | sort(attribute='title')-%}
             <li class="service-library-card">
                 <h2>{{service.title}}</h2>
-                <p>{{service.description}} Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-                numquam molestiae natus doloribus assumenda neque at ratione possimus laboriosam cumque.</p>
-                <ul class="tag-wrapper">
+                <p>{{service.description}} Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                {# <ul class="tag-wrapper">
                     <li><p>Type:</p><p>{{service.category.type}}</p></li>
                     <li><p>Process:</p><p>{{service.category.process}}</p></li>
-                </ul>
+                </ul> #}
             </li>
         {%- endfor -%}
     </ul>

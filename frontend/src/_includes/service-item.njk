@@ -1,6 +1,28 @@
 <li class="service-item-original">
     <h3 class="service-title">{{service.title}}</h3>
     <div class="info-icon">
-        <img src="./images/information-circle-outline.svg" alt="">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<path d="M248,448c-110.3,0-200-89.7-200-200S137.7,48,248,48s200,89.7,200,200S358.3,448,248,448z M248,80
+		c-92.6,0-168,75.4-168,168s75.4,168,168,168s168-75.4,168-168S340.6,80,248,80z"/>
+</g>
+<g>
+	<path d="M312,340c0,8.8-7.2,16-16,16h-88c-8.8,0-16-7.2-16-16s7.2-16,16-16h28v-88h-16c-8.8,0-16-7.2-16-16s7.2-16,16-16h32
+		c8.8,0,16,7.2,16,16v104h28C304.8,324,312,331.2,312,340z"/>
+</g>
+<g>
+	<path d="M248,130c-14.4,0-26,11.6-26,26s11.6,26,26,26s26-11.6,26-26S262.4,130,248,130z"/>
+</g>
+</svg>
+
+
+        <span class="description-span">
+            <p class="service-description">{{service.description}}</p>
+            {# <ul class="tag-wrapper">
+                    <li><p>Type:</p><p>{{service.category.type}}</p></li>
+                    <li><p>Process:</p><p>{{service.category.process}}</p></li>
+                </ul> #}
+        </span>
     </div>
 </li>

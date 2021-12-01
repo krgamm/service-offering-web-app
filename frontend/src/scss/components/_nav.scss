@@ -3,6 +3,10 @@
 
 nav {
   display: flex;
+  background-color: var(--clr-accent-blue);
+  width: fit-content;
+  //   margin: auto;
+  border-radius: 0 0 0.25em 0.25em;
 }
 .nav-link {
   padding: 0.25em 0.5em;
@@ -10,7 +14,7 @@ nav {
   cursor: pointer;
   border-radius: 0.5em;
   border: none;
-  background-color: transparent;
+  background-color: var(--clr-neutral-200);
   @include mq(medium) {
     &:hover,
     .active {

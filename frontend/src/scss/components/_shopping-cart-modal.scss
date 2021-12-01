@@ -2,16 +2,32 @@
 @use "../abstracts/type-scale" as *;
 
 #shopping-cart-modal {
-  background-color: gray;
+  background-color: var(--clr-neutral-100);
   padding: 2em;
+  border-left: 2px solid black;
   .service-item-wrapper {
     flex-direction: column;
-    .service-item {
+    .service-item-original {
       width: 100%;
+      border: none;
+      background-color: lightgray;
+      &:hover {
+        color: var(--clr-neutral-700);
+        cursor: pointer;
+        svg {
+          fill: var(--clr-neutral-700);
+        }
+      }
     }
   }
   @include mq(medium) {
     width: 500px;
     height: auto;
+  }
+}
+
+.clone-service-item {
+  .info-icon:hover .description-span {
+    display: hidden;
   }
 }

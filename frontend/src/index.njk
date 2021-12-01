@@ -1,68 +1,23 @@
 ---
 name: Home
-layout: base.njk
+layout: base-no-nav.njk
 ---
-{# {%- for service in services -%}
-    {%- if service.category.process === "Discover"-%}
-        <h1>{{service.category.process}}</h1>
-        <p>{{service.title}}</p>
-    {%- endif -%}
-{%- endfor -%} #}
-<div class="container">
 
-<div id="process-wrapper">
-    <h1>Discover</h1>
-    <ul class="service-item-wrapper">
-        {%- for service in serviceGraph -%}
-            {%- if service.category.process === "Discover"-%}
-                {%- include 'service-item.njk'-%}
-            {%- endif -%}
-        {%- endfor -%}
-    </ul>
-    <h1>Define</h1>
-    <ul class="service-item-wrapper">
-        {%- for service in serviceGraph -%}
-            {%- if service.category.process === "Define"-%}
-                {%- include 'service-item.njk'-%}
-            {%- endif -%}
-        {%- endfor -%}
-    </ul>
-    <h1>Design</h1>
-    <ul class="service-item-wrapper">
-        {%- for service in serviceGraph -%}
-            {%- if service.category.process === "Design"-%}
-               {%- include 'service-item.njk'-%}
-            {%- endif -%}
-        {%- endfor -%}
-        
-    </ul>
-    <h1>Deliver</h1>
-    <ul class="service-item-wrapper">
-        {%- for service in serviceGraph -%}
-            {%- if service.category.process === "Deliver"-%}
-                {%- include 'service-item.njk'-%}
-            {%- endif -%}
-        {%- endfor -%}
-    </ul>
-    <h1>Debrief</h1>
-    <ul class="service-item-wrapper">
-        {%- for service in serviceGraph -%}
-            {%- if service.category.process === "Debrief"-%}
-                {%- include 'service-item.njk'-%}
-            {%- endif -%}
-        {%- endfor -%}
-    </ul>
-    </div>
+<div class="container" id="home-page">
 
-    <button href="/services-library/" id="template-btn">Templates</button>
-
+<div id="main-content">
+<div class="heading-wrapper">
+    <h1>Project Builder</h1>
+    <p>Select a path to explore our services!</p>
 </div>
 
-{# <h1>Discover</h1>
-<ul>
-    {%- for service in services -%}
-        {%- if service.category.process === "Discover"-%}
-             <li>{{service.title}}</li>
-        {%- endif -%}
-    {%- endfor -%}
-</ul> #}
+    <ul class="nav-options-wrapper">
+        <li class="nav-option-item"><a href="/services-library">Learn</a></li>
+        <li class="nav-option-item"><a href="/project-builder">Begin with blank plan</a></li>
+        <li class="nav-option-item"><a href="/project-builder">Choose from template</a></li>
+    </ul>
+
+</div>
+<img id="rp-logo" src="./images/rp-logo.svg" alt="">
+
+</div>
