@@ -2,7 +2,7 @@
 @use "../abstracts/type-scale" as *;
 
 #template-modal {
-  background-color: red;
+  background-color: var(--clr-neutral-700);
   position: absolute;
   @include mq(medium) {
     height: 100%;
