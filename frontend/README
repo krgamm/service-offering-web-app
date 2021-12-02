@@ -1,1 +1,10 @@
-This is a template folder for SASS and Eleventy
+# _Eleventy (11ty) Details_
+
+#### By _Kevin Gammenthaler_
+
+#### _Brief description on dev environments_
+
+## Console Commands
+
+- _'npm start' for development_
+- _'npm build' for production_
