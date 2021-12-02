@@ -22,10 +22,8 @@ _The main objective of this project is to highlight the flexibility of using a C
 - _NPM is used for this project_
 - _Repo is organized by backend and frontend (you will find all package.json files in respective folders)_
 - _Once inside backend or frontend, type: npm install_
-- _Access the Strapi CMS here:_
-- _Hosted by Vercel:_
-
-_If you decide to _
+- _Access the Strapi CMS here: https://rp-service-offerings.herokuapp.com/admin_
+- _Hosted by Vercel: https://service-offering-web-app.vercel.app/_
 
 ## Known Bugs
 
@@ -39,7 +37,5 @@ _If you decide to _
 - _https://uxrecipe.github.io/#_
 
 ## License
-
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns. Encourage them to contact you or make a contribution to the code.}_
 
 Copyright (c) _2021-Present_ _Kevin Gammenthaler_
