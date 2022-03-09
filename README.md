@@ -30,7 +30,7 @@ _The main objective of this project is to highlight the flexibility of using a C
 - _Checkout logic is a bit spotty. Adding and removing services sometimes duplicates_
 - _Visual design is not focus_
 
-## Project Insporation
+## Project Inspiration
 
 - _The site below is what this application is based on_
 - _Idea was to stretch this format into a dynmaic updatable process_
